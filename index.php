@@ -14,18 +14,6 @@
         <input type="submit" value="Enviar" name="enviar_conductor">
     </form>
 
-    <h1>Registre nuevo vehiculo</h1>
-    <form action="procesar_vehiculo.php" method="POST">
-        <p><input type="text" name="placa" placeholder="Placa"><br></p>
-        <p><input type="text" name="color" placeholder="Color"><br></p>
-        <p><input type="text" name="marca" placeholder="Marca"><br></p>
-        <p><input type="text" name="tipo_vehiculo" placeholder="Particular  o Publico"><br></p>
-        <p><input type="text" name="conductor" placeholder="Conductor"><br></p>
-        <p><input type="text" name="propietario" placeholder="Propietario"><br></p>
-        
-        <input type="submit" value="Enviar" name="enviar_vehiculo">
-    </form>
-
     <h1>Registre nuevo propietario</h1>
     <form action="procesar_propietario.php" method="POST">
         <p><input type="number" name="cedula" placeholder="Cedula"><br></p>
@@ -37,8 +25,18 @@
         <p><input type="number" name="telefono" placeholder="Telefono"><br></p>
         
         <input type="submit" value="Enviar" name="enviar_propietario">
+    </form>
 
+    <h1>Registre nuevo vehiculo</h1>
+    <form action="procesar_vehiculo.php" method="POST">
+        <p><input type="text" name="placa" placeholder="Placa"><br></p>
+        <p><input type="text" name="color" placeholder="Color"><br></p>
+        <p><input type="text" name="marca" placeholder="Marca"><br></p>
+        <p><input type="text" name="tipo_vehiculo" placeholder="Particular  o Publico"><br></p>
+        <p><input type="number" name="conductor_cedula" placeholder="Cedula Conductor"><br></p>
+        <p><input type="number" name="propietario_cedula" placeholder="Cedula Propietario"><br></p>
         
+        <input type="submit" value="Enviar" name="enviar_vehiculo">
     </form>
 
     <from action="consultar.php" method="POST">

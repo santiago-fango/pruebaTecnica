@@ -8,6 +8,6 @@ $direccion = $_POST['direccion'];
 $ciudad = $_POST['ciudad'];
 $telefono = $_POST['telefono'];
 
-$conect->query("INSERT INTO usuario (cedula, primer_nombre, segundo_nombre, apellidos, direccion, ciudad, telefono) VALUES ('$cedula', '$primer_nombre', '$segundo_nombre', '$apellidos', '$direccion', '$ciudad', '$telefono')");
+$conect->query("INSERT INTO propietario (cedula, primer_nombre, segundo_nombre, apellidos, direccion, ciudad, telefono) VALUES ('$cedula', '$primer_nombre', '$segundo_nombre', '$apellidos', '$direccion', '$ciudad', '$telefono')");
 
 mysqli_close($conect);
