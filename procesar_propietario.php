@@ -11,3 +11,6 @@ $telefono = $_POST['telefono'];
 $conect->query("INSERT INTO propietario (cedula, primer_nombre, segundo_nombre, apellidos, direccion, ciudad, telefono) VALUES ('$cedula', '$primer_nombre', '$segundo_nombre', '$apellidos', '$direccion', '$ciudad', '$telefono')");
 
 mysqli_close($conect);
+
+
+echo "Se registró con exito";

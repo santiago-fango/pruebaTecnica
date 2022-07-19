@@ -32,15 +32,16 @@
         <p><input type="text" name="placa" placeholder="Placa"><br></p>
         <p><input type="text" name="color" placeholder="Color"><br></p>
         <p><input type="text" name="marca" placeholder="Marca"><br></p>
-        <p><input type="text" name="tipo_vehiculo" placeholder="Particular  o Publico"><br></p>
+        <p><input type="text" name="tipo_vehiculo" placeholder="Particular o Publico"><br></p>
         <p><input type="number" name="conductor_cedula" placeholder="Cedula Conductor"><br></p>
         <p><input type="number" name="propietario_cedula" placeholder="Cedula Propietario"><br></p>
         
         <input type="submit" value="Enviar" name="enviar_vehiculo">
-    </form>
 
-    <from action="consultar.php" method="POST">
-        <input type="submit" value="Consultar" name="consulta">
+    </form>
+    <h1>Consultar</h1>
+    <form action="consultar.php" method="POST">
+        <input type="submit" value="Consultar" name="con">
     </from>
 
 
@@ -56,7 +57,7 @@
         }else if(isset($_POST['enviar_propietario'])){
             include ("conexion.php");
             include ("procesar_propietario.php");
-        }else if(isset($_POST['consulta'])){
+        }else if(isset($_POST['con'])){
             include ("conexion.php");
             include ("consultar.php");
         }
